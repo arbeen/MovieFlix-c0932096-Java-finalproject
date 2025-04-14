@@ -12,7 +12,7 @@ public class FavoriteMovie {
     // Getters for the fields
     @Setter
     @Id
-    private Long id;  // Movie's unique identifier, TMDb's movie ID
+    private Long id;
 
     @Setter
     private String title;

@@ -92,12 +92,12 @@ public class MovieService{
         System.out.println(movie);
         if (movie != null) {
             FavoriteMovie fav = new FavoriteMovie();
-            fav.setId(movie.getId()); // TMDb ID as primary key (must not be null)
+            fav.setId(movie.getId());
             fav.setTitle(movie.getTitle());
             fav.setOverview(movie.getOverview());
             fav.setPoster_path(movie.getPoster_path());
             // Set other fields
-            favoriteRepo.save(fav); // ← will throw if movie.getId() is null
+            favoriteRepo.save(fav);
         }
 
     }

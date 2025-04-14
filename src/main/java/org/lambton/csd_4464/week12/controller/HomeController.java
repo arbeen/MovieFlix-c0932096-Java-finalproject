@@ -21,13 +21,10 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        // Get the list of trending movies
         List<Movie> trendingMovies = movieService.getTrendingMovies();
 
-        // Find the movie with the highest rating
         Movie highestRatedMovie = getHighestRatedMovie(trendingMovies);
 
-        // Add movies and highest-rated movie to the model
         model.addAttribute("trendingMovies", trendingMovies);
         model.addAttribute("highlightMovie", highestRatedMovie);
 
@@ -37,6 +34,6 @@ public class HomeController {
     private Movie getHighestRatedMovie(List<Movie> movies) {
         return movies.stream()
                 .max((movie1, movie2) -> Double.compare(movie1.getVote_average(), movie2.getVote_average()))
-                .orElse(null); // Return null if no movies are available
+                .orElse(null);
     }
 }

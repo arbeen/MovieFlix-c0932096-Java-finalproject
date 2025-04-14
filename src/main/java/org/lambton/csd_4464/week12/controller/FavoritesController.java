@@ -17,7 +17,7 @@ public class FavoritesController {
     @GetMapping
     public String showFavorites(Model model) {
         model.addAttribute("favorites", movieService.getFavoriteMovies());
-        return "favorites"; // Use favorites.html to render the page
+        return "favorites";
     }
 
     @PostMapping("/add/{id}")
