@@ -1,0 +1,338 @@
+/* General Styling */
+body {
+    background-color: #141414 !important;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #e50914;
+}
+
+h1, h3 {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #141414;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+    color: #e50914;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #141414;
+    color: #fff;
+    padding: 15px 0;
+}
+
+/* Highlighted (Banner) Movie Section */
+.highlighted-movie {
+    position: relative;
+    height: 500px;
+    background-color: #000;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.banner-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.highlight-overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.highlight-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.highlight-overlay p {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Trending Movies Section Title */
+.section-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Movie List Grid Layout */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #333 !important;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 350px; /* Adjusted height for consistency */
+    width: 100%;
+    border-bottom: 1px solid #222;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #5c5c5c;
+    height: 60px; /* Fixed height to allow for text truncation */
+    overflow: hidden;
+}
+
+.card-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons Styling */
+.btn-primary,
+.btn-success,
+.btn-warning {
+    background-color: #e50914;
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-success:hover,
+.btn-warning:hover {
+    background-color: #b20710;
+}
+
+/* Movie Details Card Styling */
+.movie-details-card {
+    max-width: 800px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.movie-details-card .card-img-top {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.movie-details-card .card-body {
+    padding: 20px;
+}
+
+.movie-details-card .card-title {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.movie-details-card .card-text {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 1rem;
+}
+
+/* Ensure buttons are consistent across pages */
+.btn-warning {
+    background-color: #f5c518;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e2b007;
+}
+
+.btn-success,
+.btn-danger {
+    border: none;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+.text-truncate-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f5c518;
+}
+
+.movie-detail-poster {
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.movie-info {
+    background-color: #1c1c1c;
+    border-radius: 12px;
+}
+
+.movie-info h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.movie-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.movie-info ul li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Button Hover Enhancements */
+.btn-warning:hover {
+    background-color: #d48c00;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f5c518;
+}
+
+/* Movie Card */
+.movie-card {
+    background-color: #1c1c1c;
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.03);
+}
+
+.movie-poster {
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Truncate to 3 lines */
+.text-truncate-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Buttons */
+.btn-warning,
+.btn-success {
+    font-weight: 500;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #d48c00;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Card Text */
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #fff;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Layout Fixes */
+body {
+    background-color: #141414;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
